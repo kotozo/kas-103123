@@ -21,3 +21,13 @@ export function setClick(selector, callback) {
   });
   qs(selector).addEventListener("click", callback);
 }
+
+
+//Before importing a function to another file, the function needs export (2)
+export function getParams(param) {
+  //W02 Create a new function called getParams(param) (1)
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const product = urlParams.get('product');
+  return product;
+}

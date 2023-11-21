@@ -1,5 +1,7 @@
 import { setLocalStorage } from "./utils.mjs";
 import ProductData from "./ProductData.mjs";
+// import function in to the product.js file team week2 (2)
+import { getParams } from "./utils.mjs";
 
 const dataSource = new ProductData("tents");
 
